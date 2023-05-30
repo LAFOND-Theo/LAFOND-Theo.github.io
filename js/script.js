@@ -37,20 +37,22 @@ $(window).on("load", function () {
               goTo = 0
           } else {
               goTo = $("#" + target).first().offset().top;
-              if (target == "presentation") {
+              if (target == "accueil") {
                   goTo += 0;
               } else if (target == "competences") {
                   goTo += 0;
               } else if (target == "projets") {
                   goTo += 0;
               } else if (target == "parcours") {
+                  goTo -= 150;
+              } else if (target == "veille") {
                   goTo -= 0;
               } else if (target == "contact") {
                   goTo -= 0;
               }
           }
           if (window.innerWidth <= 768) {
-              if (target == "presentation") {
+              if (target == "accueil") {
                   goTo -= 80;
               } else if (target == "competences") {
                   goTo -= 20;
@@ -58,8 +60,10 @@ $(window).on("load", function () {
                   goTo -= 80;
               } else if (target == "parcours") {
                   goTo -= 90;
+              } else if (target == "veille") {
+                  goTo -= 90;
               } else if (target == "contact") {
-                goTo -= 90;
+                  goTo -= 90;
             }
           }
           $("body, html").stop().animate({

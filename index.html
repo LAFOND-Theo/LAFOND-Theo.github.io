@@ -35,17 +35,20 @@
         </div>
         <div class="navbar-centre">
           <ul>
-            <li data-target="presentation">
-              <a href="#">Présentation</a>
+            <li data-target="accueil">
+              <a href="#">Acceuill</a>
             </li>
-            <li data-target="competences">
-              <a href="#">Compétences</a>
+            <li data-target="parcours">
+              <a href="#">Parcours</a>
             </li>
             <li data-target="projets">
               <a href="#">Projets</a>
             </li>
-            <li data-target="parcours">
-              <a href="#">Parcours</a>
+            <li data-target="competences">
+              <a href="#">Compétences</a>
+            </li>
+            <li data-target="veille">
+              <a href="#">Veille</a>
             </li>
             <li data-target="contact">
               <a href="#">Contact</a>
@@ -72,14 +75,14 @@
     </div>
   </div> -->
 
-  <section class="presentation" id="presentation">
+  <section class="accueil" id="accueil">
     <div class="image-container">
-        <img src="presentation.jpg" alt="Description of your image">
+        <img src="accueil.jpg" alt="Image d'acceuill">
     </div>
-    <div class="presentation-container">
+    <div class="accueil-container">
       <div class="apparition-droite">
-        <div class="text-presentation">
-          <!-- <img src="bulle-presentation.png" alt="Bulle de discussion"> -->
+        <div class="text-accueil">
+          <!-- <img src="bulle-accueil.png" alt="Bulle de discussion"> -->
           <h2>Bienvenue sur mon portfolio !</h2>
           <p>Je m'appelle Théo Lafond, j'ai 21 ans et je suis un jeune développeur passionné.</p>
           <p">Actuellement en deuxième année de BTS SIO option SLAM, j'ai acquis des compétences significative en développement logiciel, en conception de bases de données et en gestion de projets.</p>
@@ -90,6 +93,103 @@
       </div>
     </div>
 
+  </section>
+
+  <section class="parcours" id="parcours">
+    <fieldset>
+      <p>Brevet des collèges</p>
+      <legend>2012-2016</legend>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+    </fieldset>
+    <fieldset>
+      <legend>2019-2022</legend>
+      <p>Ripeur</p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+       <p>Durée total: 6 mois</p>
+    </fieldset>
+    <fieldset>
+      <p>BTS SIO option B: SLAM</p>
+      <legend>2021-2023</legend>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+    </fieldset>
+    <fieldset>
+      <p>Apprentissage (développeur Java)</p>
+      <legend>2022-2023</legend>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+      <p>Durée total: 11 mois</p>
+    </fieldset>
+  </section>
+
+  <section class="projets" id="projets">
+    <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet1.html">
+            <div class="entete-swiper">
+              <div class="content">
+                <p>
+                  Projet numéro 1
+                </p>
+              </div>
+              <div class="open-icon">
+                <div class="circle">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-image-container">
+              <img src="modal-projet/Projet-keyboard/Capture.PNG" alt="Image du clavier réalisé">
+            </div>
+          </div>
+          
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
+            <div class="entete-swiper">
+              <div class="content">
+                <p>
+                  Projet numéro 2
+                </p>
+              </div>
+              <div class="open-icon">
+                <div class="circle">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-image-container">
+              <img src="modal-projet/Projet-GSB/Capture.PNG" alt="Image page authentification GSB">
+            </div>
+          </div>
+          
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
+            <div class="entete-swiper">
+              <div class="content">
+                <p>
+                  Projet numéro 3
+                </p>
+              </div>
+              <div class="open-icon">
+                <div class="circle">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
+            <div class="entete-swiper">
+              <div class="content">
+                <p>
+                  Projet numéro 4
+                </p>
+              </div>
+              <div class="open-icon">
+                <div class="circle">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- <div class="swiper-pagination"></div> -->
   </section>
 
   <section class="competences" id="competences">
@@ -123,56 +223,11 @@
       </div>
     </div>
   </section>
-
-  <section class="projets" id="projets">
-    <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonialBox">
-              <div class="content">
-                <p>
-                  Projet numéro 1
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="swiper-slide">
-            <div class="testimonialBox">
-              <div class="content">
-                <p>
-                  Projet numéro 2
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="swiper-slide">
-            <div class="testimonialBox">
-              <div class="content">
-                <p>
-                  Projet numéro 3
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="swiper-slide">
-            <div class="testimonialBox">
-              <div class="content">
-                <p>
-                  Projet numéro 4
-                </p>
-              </div>
-            </div>
-          </div>
-      <!-- <div class="swiper-pagination"></div> -->
-  </section>
-
-  <section class="parcours" id="parcours">
-
-  </section>
+  
+  <div class="modal">
+    <div class="modal-content">
+    </div>
+  </div>
   
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -193,7 +248,58 @@
         slideShadows: true,
       },
     });
+
+    // Ouvrir le modal
+    $('.open-icon').on('click', function() {
+      var slide = $(this).closest('.swiper-slide');
+      var contentUrl = slide.data('modal-content-url');
+
+      // Charger le contenu du fichier externe
+      $.ajax({
+        url: contentUrl,
+        dataType: 'html',
+        success: function(data) {
+          $('.modal-content').html(data);
+
+          // Charger le fichier CSS externe
+          var cssUrl = "style.css";
+          $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
+
+          // Fermer le modal
+          $('.modal').on('click', '.close-icon', function() {
+            var slide = $('.swiper-slide.fullscreen');
+            slide.removeClass('fullscreen');
+            $('.modal').removeClass('open');
+            $('body').removeClass('modal-open');
+            $('.dark-overlay').removeClass('open');
+          });
+        },
+        error: function() {
+          $('.modal-content').html('<p>Erreur lors du chargement du contenu.</p>');
+        }
+      });
+
+      slide.addClass('fullscreen');
+      $('.modal').addClass('open');
+      $('body').addClass('modal-open');
+      $('.dark-overlay').addClass('open');
+    });
+    
+    //Evénement lors d'un scroll
+    $(window).on('scroll', function() {
+    var scrollPos = $(window).scrollTop();
+    //parcoursOffset représente la position verticale (top) de l'élément ayant la classe 'parcours' par rapport au document
+    var parcoursOffset = $('.parcours').offset().top;
+    var windowHeight = $(window).height();
+    //Vérifie si la position de défilement actuelle plus la hauteur de la fenêtre dépasse la position (offset) de la section 'parcours'
+    if (scrollPos + windowHeight > parcoursOffset) {
+      //Faire apparaitre les fieldset
+      $('.parcours').addClass('show');
+    }
+  });
+
   </script>
+  <div class="dark-overlay"></div>
 </body>
 
 </html>
