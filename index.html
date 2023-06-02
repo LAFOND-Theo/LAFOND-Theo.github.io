@@ -36,7 +36,7 @@
         <div class="navbar-centre">
           <ul>
             <li data-target="accueil">
-              <a href="#">Acceuill</a>
+              <a href="#">Accueil</a>
             </li>
             <li data-target="parcours">
               <a href="#">Parcours</a>
@@ -57,7 +57,7 @@
         </div>
         <div class="navbar-droite">
           <div class="nav-get-started">
-            <a href="#" class="github">Github</a>
+            <a href="https://github.com/LAFOND-Theo?tab=repositories" class="github">Github</a>
           </div>
           <div class="menu-lateral-mobile">
             <div class="menu-lateral-mobile-burger">
@@ -97,26 +97,27 @@
 
   <section class="parcours" id="parcours">
     <fieldset>
-      <p>Brevet des collèges</p>
-      <legend>2012-2016</legend>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+      <legend>2022-2023</legend>
+      <p>Apprentissage (développeur Java)</p>
+       Interchim - Montluçon
+      <p>Durée total: 11 mois</p>
+    </fieldset>
+    <fieldset>
+      <legend>2021-2023</legend>
+      <p>BTS SIO option B: SLAM</p>
+      Lycée Eugène Jamot - Aubusson
     </fieldset>
     <fieldset>
       <legend>2019-2022</legend>
       <p>Ripeur</p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
+       SICTOM de Montluçon - Périodes de vacances scolaire
        <p>Durée total: 6 mois</p>
     </fieldset>
     <fieldset>
-      <p>BTS SIO option B: SLAM</p>
-      <legend>2021-2023</legend>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
-    </fieldset>
-    <fieldset>
-      <p>Apprentissage (développeur Java)</p>
-      <legend>2022-2023</legend>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem nec sapien sagittis convallis. Praesent rhoncus a lacus quis semper. Suspendisse potenti. Maecenas et sapien enim.
-      <p>Durée total: 11 mois</p>
+      <legend>2019-2021</legend>
+      <p>Bac pro Systèmes numériques : Audiovisuels, réseau et équipement domestiques (ARED)</p>
+      Lycée Albert Einstein - Montluçon
+      <p>Mention: Bien </p>
     </fieldset>
   </section>
 
@@ -124,29 +125,12 @@
     <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
+          
           <div class="swiper-slide" data-modal-content-url="modal-projet/projet1.html">
             <div class="entete-swiper">
               <div class="content">
                 <p>
                   Projet numéro 1
-                </p>
-              </div>
-              <div class="open-icon">
-                <div class="circle">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-image-container">
-              <img src="modal-projet/Projet-keyboard/Capture.PNG" alt="Image du clavier réalisé">
-            </div>
-          </div>
-          
-          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
-            <div class="entete-swiper">
-              <div class="content">
-                <p>
-                  Projet numéro 2
                 </p>
               </div>
               <div class="open-icon">
@@ -164,6 +148,21 @@
             <div class="entete-swiper">
               <div class="content">
                 <p>
+                  Projet numéro 2
+                </p>
+              </div>
+              <div class="open-icon">
+                <div class="circle">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet3.html">
+            <div class="entete-swiper">
+              <div class="content">
+                <p>
                   Projet numéro 3
                 </p>
               </div>
@@ -175,11 +174,11 @@
             </div>
           </div>
           
-          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projet4.html">
             <div class="entete-swiper">
               <div class="content">
                 <p>
-                  Projet numéro 4
+                  Projet clavier visuel
                 </p>
               </div>
               <div class="open-icon">
@@ -188,7 +187,11 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-image-container">
+              <img src="modal-projet/Projet-keyboard/Capture.PNG" alt="Image du clavier réalisé">
+            </div>
           </div>
+
       <!-- <div class="swiper-pagination"></div> -->
   </section>
 
@@ -222,6 +225,31 @@
         <span>MySQL</span>
       </div>
     </div>
+    
+    <h3>Certifications</h3>
+  </section>
+
+  <section class="veille" id="veille">
+    <fieldset>
+      <legend>Veille informatique</legend>
+    </fieldset>
+    <fieldset>
+      <legend>Veille juridique</legend>
+    </fieldset>
+  </section>
+
+  <section class="contact" id="contact">
+    <p><b>Si vous le souhaitez, vous pouvez me laisser un message:</b></p>
+    <div class="container-form">
+      <form action="https://formsubmit.co/email" method="POST">
+        <input  type="text" id="nom" name="nom" required placeholder="Votre nom">
+        <input  type="text" id="prenom" name="prenom" required placeholder="Votre prenom">
+        <input  type="email" id="email" name="email" required placeholder="Votre e-mail">
+        <textarea maxlength="2000" class="textarea" name="message" cols="30" rows="6" placeholder="Votre message"></textarea>
+        <br>
+        <button class="button fa fa-paper-plane" type="submit"> <span>ENVOYER</span> </button>
+      </form>
+    </div>
   </section>
   
   <div class="modal">
@@ -239,7 +267,7 @@
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 2,
+      slidesPerView: 1.75,
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -253,6 +281,12 @@
     $('.open-icon').on('click', function() {
       var slide = $(this).closest('.swiper-slide');
       var contentUrl = slide.data('modal-content-url');
+      
+      // Masquer le contenu actuel du modal
+      $('.modal-content').addClass('hidden-content');
+
+      // Génère un timestamp unique, rendant l'URL différente à chaque chargement de façon à empêcher le navigateur de mettre en cache le contenu
+      contentUrl = contentUrl + '?t=' + new Date().getTime();
 
       // Charger le contenu du fichier externe
       $.ajax({
@@ -264,6 +298,9 @@
           // Charger le fichier CSS externe
           var cssUrl = "style.css";
           $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
+
+          // Afficher le nouveau contenu
+          $('.modal-content').removeClass('hidden-content');
 
           // Fermer le modal
           $('.modal').on('click', '.close-icon', function() {

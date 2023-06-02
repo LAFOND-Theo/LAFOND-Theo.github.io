@@ -108,120 +108,6 @@ body {
   border-right: 20px solid white;
 }
 
-
-.competences{
-  height: 100vh;
-  margin-top: 108px;
-  /* scroll-margin-top: 108px; */
-}
-
-.competences h2 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-.competences ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.competences ul li {
-  width: calc(50% - 20px);
-  margin-bottom: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 18px;
-}
-
-.competences ul li:last-child {
-  margin-right: 0;
-}
-
-.competences .langages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.competences .langage {
-  width: calc(20% - 20px);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.competences .langage img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.competences .langage span {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.projets{
-  height: 100vh;
-  margin-top: 108px;
-  /* scroll-margin-top: 108px; */
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Section Parcours */
-
-.parcours{
-  height: 100vh;
-  margin-top: 200px;
-  display: grid;
-  place-items: center;
-  opacity: 0; /* Masquer initialement les fieldsets */
-}
-
-.parcours.show {
-  opacity: 1; /* Afficher les fieldsets avec une animation */
-  transition: opacity 1s ease-in-out;
-}
-
-fieldset {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  background-color: white;
-  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
-  margin-bottom: 45px;
-  width: 92%;
-}
-
-fieldset:last-child {
-  margin-bottom: 0; /* Supprime l'espace après le dernier fieldset */
-}
-
-fieldset legend {
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
-}
-
 /* Navbar */
 
 .navbar-sec.fixed-nav .navbar-container {
@@ -478,6 +364,58 @@ body.black .navbar-sec.fixed-nav .navbar {
   background-color: darkcyan;
 }
 
+/* Parcours */
+
+.parcours{
+  height: 100vh;
+  margin-top: 200px;
+  display: grid;
+  place-items: center;
+  opacity: 0; /* Masquer initialement les fieldsets */
+}
+
+.parcours.show {
+  opacity: 1; /* Afficher les fieldsets avec une animation */
+  transition: opacity 1s ease-in-out;
+}
+
+.parcours fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
+  margin-bottom: 45px;
+  width: 92%;
+}
+
+.parcours fieldset:last-child {
+  margin-bottom: 0; /* Supprime l'espace après le dernier fieldset */
+}
+
+.parcours fieldset legend {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
+}
+
+/* Projets */
+
+.projets{
+  height: 100vh;
+  margin-top: 108px;
+  /* scroll-margin-top: 108px; */
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
 .swiper {
   width: 100%;
@@ -607,7 +545,6 @@ body.black .navbar-sec.fixed-nav .navbar {
   color: #000000;
 }
 
-
 /* Masquer la barre de défilement de la page principale lorsque le modal est ouvert */
 body.modal-open {
   overflow: hidden;
@@ -631,7 +568,107 @@ body.modal-open {
   pointer-events: none;
 }
 
+.hidden-content { 
+  display: none; 
+}
 
+/* Compétences */
+
+.competences{
+  height: 90vh;
+  margin-top: 108px;
+  /* scroll-margin-top: 108px; */
+}
+
+.competences h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.competences ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.competences ul li {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+}
+
+.competences ul li:last-child {
+  margin-right: 0;
+}
+
+.competences .langages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.competences .langage {
+  width: calc(20% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.competences .langage img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.competences .langage span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Veille */
+
+.veille{
+  height: 100vh;
+  display: flex; 
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.veille fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
+  width: 35%;
+  height: 70%;
+}
+
+.veille fieldset legend {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 15px 35px rgb(51 51 51 / 15%), 0 2px 20px rgb(0 0 0 / 25%);
+}
+
+/* Contact */
+
+.contact{
+  height: 100vh;
+}
 
 @media screen and (max-width: 990px) {
   :root {
@@ -743,6 +780,19 @@ body.modal-open {
     border-right: 20px solid transparent;
     border-bottom: 20px solid white;
     border-top: none;
+  }
+
+  .veille{
+    flex-direction: column;
+  }
+
+  .veille fieldset{
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .veille fieldset:last-child {
+    margin-bottom: 0; /* Supprime l'espace après le dernier fieldset */
   }
   
 }
