@@ -396,7 +396,8 @@ body.black .navbar-sec.fixed-nav .navbar {
 }
 
 .parcours fieldset legend {
-  background-color: white;
+  background-color: black;
+  color: white;
   padding: 5px 10px;
   border-radius: 20px;
   border: 1px solid black;
@@ -487,6 +488,8 @@ body.black .navbar-sec.fixed-nav .navbar {
 
 .modal.open {
   display: block;
+  width: 90%;
+  height: 90%;
 }
 
 .modal-content {
@@ -630,6 +633,10 @@ body.modal-open {
   font-size: var(--font24);
 }
 
+.logo-modal{
+  max-height: 100px;
+}
+
 /* Compétences */
 
 .competences{
@@ -715,7 +722,8 @@ body.modal-open {
 }
 
 .veille fieldset legend {
-  background-color: white;
+  background-color: black;
+  color: white;
   padding: 5px 10px;
   border-radius: 20px;
   border: 1px solid black;
@@ -726,6 +734,35 @@ body.modal-open {
 
 .contact{
   height: 100vh;
+}
+
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-form .row {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-form .row .col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.container-form .row .col:last-child {
+  margin-right: 0;
+}
+
+.container-form form {
+  width: 100%;
+}
+
+.container-form input,
+.container-form textarea{
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 990px) {

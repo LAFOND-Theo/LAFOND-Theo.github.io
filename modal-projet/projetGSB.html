@@ -1,0 +1,81 @@
+<div class="entete-modal">
+    <div class="close-icon">
+        <i class="fas fa-times"></i>
+    </div>
+    <p>Projet GSB</p>
+</div>
+<div class="contenu-modal">
+    <fieldset>
+        <legend>Contexte</legend>
+        <p>Galaxy Swiss Bourdin est un laboratoire qui engage des visiteurs médicaux fournissant des brochures pour des
+            médicaments. Les visiteurs médicaux ont donc des frais intervenant dans le cadre de leur métier dû au 
+            déplacement. Le suivi des frais est actuellement géré de plusieurs façons. Dans le cadre de l’évolution 
+            informatique, le laboratoire souhaite donc uniformiser cette gestion.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Langages et frameworks utilisés</legend>
+        <img class="logo-modal" src="logo/laravel.png" alt="Logo Laravel">
+        <img class="logo-modal" src="logo/php.png" alt="Logo PHP">
+        <img class="logo-modal" src="logo/javascript.png" alt="Logo JavaScript">
+        <img class="logo-modal" src="logo/html.png" alt="Logo HTML">
+        <img class="logo-modal" src="logo/css.png" alt="Logo CSS">
+    </fieldset>
+
+    <fieldset>
+        <legend>Cahier des charges</legend>
+    </fieldset>
+
+    <fieldset>
+        <legend>Réalisation</legend>
+        <p>Les services sont accessibles via une interface Web. Les accès sont différents selon le type d’utilisateur, de
+            façon à mettre en corrélation les services proposés avec le bon type d’utilisateur. En effet lors d’une
+            authentification réussie, une des trois pages d’accueil est affichée. Ces 3 vues ainsi que celles liées à un
+            service sont des vues enfants, que j’ai définies grâce à l’héritage de vue que permet Laravel. Cet héritage
+            permet d’avoir une vue contenant la structure globale de la page (pied de page, en-tête,..), qui est nommée le
+            parent.</p>
+        <br>
+        <p>Une de mes premières tâches dans ce projet était de créer les migrations nécessaires à l’application web.
+            Mais c’est surtout lors de la conception des contrôleurs et des modèles que j’ai rencontré des problèmes,
+            notamment avec la manipulation de données en lien avec la table pivot, référençant le type de frais
+            forfaitaire (informations préenregistrées dans la table avec pour chacune la valeur remboursable) ainsi que sa
+            quantité, en référence à un ticket.
+            Les modèles comportent des méthodes faisant office d’association. C’est dans ces méthodes que sont définies
+            les types de relation, la table visé, ainsi que la clé étrangère ou primaire permettant d’établir la relation.
+            Lors de la création des modèles, la tâche la plus délicate a été la création d'une méthode pour lier les tickets
+            aux frais forfaitaires à travers une table pivot, enregistrant la quantité de chaque type de frais. Cette méthode
+            permet d'ajouter des attributs à l'association entre les tables, en plus des clés primaires ou étrangères. Pour
+            créer un nouveau ticket, une instance est créée et stockée dans une variable. En utilisant cette instance, la
+            méthode peut être appelée pour attacher l'identifiant du ticket, le type de frais forfaitaire sélectionné et la
+            quantité renseignée par l'utilisateur à la table pivot, qui relie les tables des frais forfaitaires et des tickets.</p>
+        <br>
+        <p>En ce qui concerne la sécurité des données, j'ai mis en place une vérification de tous les champs lors de l'envoi
+            d'un formulaire. Si les règles de validation ne sont pas respectées, le code et donc le traitement ne
+            s'exécuteront pas, réduisant ainsi le risque d'injection SQL. En outre, Laravel fournit des outils pour stocker de
+            manière sécurisée les mots de passe des utilisateurs en utilisant des algorithmes de hachage tels que Bcrypt et
+            Argon2.</p>
+        <br>
+        <p>Dans l'ensemble, le site a été conçu avec une approche dynamique, pour fluidifier son utilisation. C'est
+            notamment le cas pour la sélection du type de frais que souhaite rentrer le visiteur. Deux choix sont disponibles,
+            modifiant ainsi dynamiquement, à l'aide de JavaScript, le formulaire de frais pour correspondre exactement aux
+            informations nécessaires et au bon traitement selon le frais. </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Images</legend>
+        <p></p>
+    </fieldset>    
+
+    <fieldset>
+        <legend>Compétences acquises ou renforcées</legend>
+        <p>-Travail d'équipe</p>
+        <p>-MVC</p>
+        <p>-Développement d'interfaces Web</p>
+        <p>-Conception de migrations</p>
+        <p>-Gestion des contrôleurs et des modèles</p>
+        <p>-Sécurité des données</p>
+        <p>-Programmation interactive en JavaScript</p>
+        <p>-Programmation orientée objet</p>
+        <p>-Gestion de projet</p>
+    </fieldset>
+</div>

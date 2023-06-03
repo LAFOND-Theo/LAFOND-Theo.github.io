@@ -98,9 +98,14 @@
   <section class="parcours" id="parcours">
     <fieldset>
       <legend>2022-2023</legend>
-      <p>Apprentissage (développeur Java)</p>
-       Interchim - Montluçon
-      <p>Durée total: 11 mois</p>
+      <div class="parcours-contenu">
+        <p>Apprentissage (développeur Java)</p>
+         Interchim - Montluçon
+        <p>Durée total: 11 mois</p>
+      </div>
+      <div class="parcours-image">
+        <!-- <img class="logo-modal" src="logo/travail.png" alt="Logo Travail"> -->
+      </div>
     </fieldset>
     <fieldset>
       <legend>2021-2023</legend>
@@ -126,11 +131,11 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           
-          <div class="swiper-slide" data-modal-content-url="modal-projet/projet1.html">
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projetGSB.html">
             <div class="entete-swiper">
               <div class="content">
                 <p>
-                  Projet numéro 1
+                  Projet GSB
                 </p>
               </div>
               <div class="open-icon">
@@ -144,11 +149,11 @@
             </div>
           </div>
           
-          <div class="swiper-slide" data-modal-content-url="modal-projet/projet2.html">
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projetGestCult.html">
             <div class="entete-swiper">
               <div class="content">
                 <p>
-                  Projet numéro 2
+                  Projet gestion des cultures
                 </p>
               </div>
               <div class="open-icon">
@@ -174,7 +179,7 @@
             </div>
           </div>
           
-          <div class="swiper-slide" data-modal-content-url="modal-projet/projet4.html">
+          <div class="swiper-slide" data-modal-content-url="modal-projet/projetClavier.html">
             <div class="entete-swiper">
               <div class="content">
                 <p>
@@ -242,10 +247,29 @@
     <p><b>Si vous le souhaitez, vous pouvez me laisser un message:</b></p>
     <div class="container-form">
       <form action="https://formsubmit.co/email" method="POST">
-        <input  type="text" id="nom" name="nom" required placeholder="Votre nom">
-        <input  type="text" id="prenom" name="prenom" required placeholder="Votre prenom">
-        <input  type="email" id="email" name="email" required placeholder="Votre e-mail">
-        <textarea maxlength="2000" class="textarea" name="message" cols="30" rows="6" placeholder="Votre message"></textarea>
+        <div class="row">
+          <div class="col">
+            <input  type="text" id="nom" name="nom" required placeholder="Votre nom">
+          </div>
+          <div class="col">
+            <input  type="text" id="prenom" name="prenom" required placeholder="Votre prenom">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input  type="email" id="email" name="email" required placeholder="Votre e-mail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input  type="text" id="sujet "name="sujet" required placeholder="Objet du mail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <textarea maxlength="2000" class="textarea" name="message" cols="30" rows="6" placeholder="Votre message"></textarea>
+          </div>
+        </div>
         <br>
         <button class="button fa fa-paper-plane" type="submit"> <span>ENVOYER</span> </button>
       </form>

@@ -1,0 +1,81 @@
+<div class="entete-modal">
+    <div class="close-icon">
+        <i class="fas fa-times"></i>
+    </div>
+    <p>Projet clavier visuel</p>
+</div>
+<div class="contenu-modal">
+    <fieldset>
+        <legend>Contexte</legend>
+        <p>Interchim est une entreprise spécialisée dans la fabrication et la distribution de produits chimiques, biologiques
+            et de chromatographie. Les utilisateurs utilisant le soft de l’entreprise doivent saisir des valeurs. Le soft étant
+            développé en javafx et généralement utilisé sur des écrans tactiles, l’utilisation d’un clavier visuel est
+            nécessaire. Problème, les claviers visuel native à chaque système ne s’affiche pas toujours lors d’un focus sur
+            les champs de texte. L’entreprise souhaite donc développer son propre clavier visuel.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Langages et frameworks utilisés</legend>
+        <img class="logo-modal" src="logo/javafx.png" alt="Logo JavaFx">
+        <img class="logo-modal" src="logo/xml.png" alt="Logo XML">
+        <img class="logo-modal" src="logo/css.png" alt="Logo CSS">
+    </fieldset>
+
+    <fieldset>
+        <legend>Cahier des charges</legend>
+        <p>-Multi-plateformes (Window / Linux / Mac)</p>
+        <p>-Multi-langues (Français / Anglais / Allemand / Espagnol / Chinois)</p>
+        <p>-Barre d'outils avec raccourcis et options (gestion de la transparence...)</p>
+        <p>-Layout numérique</p>
+        <p>-Redimensionnable</p>
+        <p>-Déplaçable</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Réalisation</legend>
+        <p>Lorsque l'on m'a confié ce projet, on m'a également donné un projet open source. Ce projet consiste en une interaction Java/XML via l’architecture JAXB pour la création et l’affichage des layouts
+            du clavier. L'une des premières tâches était la modification et la création de fichiers XML pour les layouts.
+        </p>
+        <br>
+        <p>En ce qui concerne le fonctionnement du clavier, pour faire face à un problème rencontré sur le soft de l'entreprise, j'ai dû, à la fin du développement du clavier,
+            revoir son fonctionnement. Car à l'origine, le clavier était ajouté à la scène d'une fenêtre en tant qu'enfant, ce
+            qui le limitait à cette même fenêtre. Pour régler les problèmes rencontrés et pour qu'il soit plus universel, le
+            clavier est désormais un Popup et donc un élément indépendant. L’affichage par défaut du clavier est sous le
+            champ de texte réquisitionnant le focus, mais s'affiche au-dessus si l’espace en dessous n’est pas suffisant. 
+        </p>
+        <br>
+        <p></p>
+        <p>Pour le mandarin, la méthode de saisie Microsoft ne détecte pas le clavier visuel comme étant un objet de saisie, ce qui a
+            nécessité l'intégration du pinyin, qui est la transcription internationale de la prononciation du chinois mandarin.
+            Pour ce faire, un fichier txt comportant pour chaque ligne une association caractère chinois et phonétique du
+            caractère a été récupéré. Ce fichier a été mappé à l'aide d'une bibliothèque se nommant MultiMap permettant
+            d’associer une clé à plusieurs valeurs. Cette opération est importante car une phonétique peut correspondre à
+            plusieurs caractères.
+            Lorsque le curseur se trouvant dans un champ de texte change de position, jusqu’à quatre mots avant le
+            curseur sont récupérés. À partir de ces mots, on vérifie qu’ils existent dans la MultiMap, et si c’est le cas, une
+            touche est instanciée par caractère correspondant, puis ajoutée à la barre d’outils.
+        </p>
+        <!-- <br>
+        <p>Le clavier est un élément indépendant de l'application dans laquelle il est utilisé. Le clavier dispose de plusieurs layout,
+            permettant de changer son aspect selon la langue locale du système ou du type souhaité (alphanumérique ou numérique).
+            Le clavier ne nécessite pas d'être ajouté à chaque champ de texte, car
+        </p> -->
+    </fieldset>
+
+    <fieldset>
+        <legend>Images</legend>
+        <p></p>
+    </fieldset>    
+
+    <fieldset>
+        
+        <legend>Compétences acquises ou renforcées</legend>
+        <p>-Esprit d'analyse</p>
+        <p>-Esprit de réflexion</p>
+        <p>-Planifier et organiser des tests pour garantir la qualité du logiciel</p>
+        <p>-Optimisation des performances</p>
+        <p>-Concepts de programmation orientée objet (événement, listener, héritage de classe, gestion des flux d'entrée,..)</p>
+        <p>-Gestion de projet</p>
+    </fieldset>
+
+</div>
