@@ -129,7 +129,7 @@
 
   <section class="projets" id="projets">
     <!-- Swiper -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiperProjets">
         <div class="swiper-wrapper">
           
           <div class="swiper-slide" data-modal-content-url="modal-projet/projetGSB.html">
@@ -160,6 +160,24 @@
               <div class="open-icon">
                 <div class="circle">
                   <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-image-container">
+              <div class="swiper mySwiperImg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-GestCult/authentification.PNG" alt="Image page authentification Gest Culture">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-GestCult/accueil.PNG" alt="Image page accueil Gest Culture">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-GestCult/saisie.PNG" alt="Image page saisie Gest Culture">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-GestCult/mcd.PNG" alt="Image MCD Gest Culture">
+                    </div>
                 </div>
               </div>
             </div>
@@ -287,7 +305,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiperProjet = new Swiper(".mySwiperProjets", {
       loop: true,
       effect: "coverflow",
       grabCursor: true,
@@ -299,6 +317,23 @@
         depth: 100,
         modifier: 2,
         slideShadows: true,
+      },
+    });
+
+    var swiperImg = new Swiper(".mySwiperImg", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
 

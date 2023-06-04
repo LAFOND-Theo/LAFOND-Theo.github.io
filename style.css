@@ -419,13 +419,13 @@ body.black .navbar-sec.fixed-nav .navbar {
   overflow: hidden;
 }
 
-.swiper {
+.projets .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.projets .swiper-slide {
   display: flex;
   flex-direction: column;
   background-position: center;
@@ -434,23 +434,31 @@ body.black .navbar-sec.fixed-nav .navbar {
   height: 50vh;
   width: 360px;
   background:white;
-  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.4);;
+  box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.4);
   filter: blur(3px);
   border-radius: 10px;
   box-sizing: border-box;
 }
 
-.swiper-slide-active{
+.projets .swiper-slide.img{
+  box-shadow: none;
+}
+
+.projets .swiper-slide img{
+  width: 100%;
+}
+
+.projets .swiper-slide-active{
   filter: blur(0px);
 }
 
-.swiper-slide {
+.projets .swiper-slide {
   height: auto;
   position: relative;
   overflow: hidden; 
 }
 
-.entete-swiper{
+.projets .entete-swiper{
   display: flex;
   position: relative;
   width: auto;
@@ -458,11 +466,11 @@ body.black .navbar-sec.fixed-nav .navbar {
   align-items: center;
 }
 
-.entete-swiper .content p{
+.projets .entete-swiper .content p{
   font-size: var(--font24);
 }
 
-.swiper-image-container img{
+.projets .swiper-image-container img{
   box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
@@ -623,6 +631,10 @@ body.modal-open {
   text-decoration: none;
 }
 
+.contenu-modal .fieldset-image{
+  display: inline-grid;
+}
+
 .contenu-modal p {
   font-size: var(--font22);
   word-wrap: break-word;
@@ -635,6 +647,78 @@ body.modal-open {
 
 .logo-modal{
   max-height: 100px;
+}
+
+.contenu-modal .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contenu-modal .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%
+}
+.contenu-modal .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.contenu-modal .swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenu-modal .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.contenu-modal .mySwiper {
+  height: 100%; 
+  box-sizing: border-box;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contenu-modal .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+
+.contenu-modal .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.contenu-modal .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: #000 1.5px solid;
+}
+
+.contenu-modal .swiper {
+  width: 100%;
+  height: auto; 
+}
+
+.contenu-modal .swiper-slide {
+  width: auto; 
 }
 
 /* Compétences */

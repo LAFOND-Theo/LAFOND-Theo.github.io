@@ -49,9 +49,44 @@
             Dans ce script des requêtes préparées sont également utilisées. L'utilisation de PHP permet une manipulation facile des données et une intégration avec la base de données décentralisée.</p>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset-image">
         <legend>Images</legend>
-        <p></p>
+        <!-- Swiper -->
+
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="modal-projet/Projet-GestCult/authentification.PNG" alt="Image page authentification Gest Culture">
+            </div>
+            <div class="swiper-slide">
+                <img src="modal-projet/Projet-GestCult/accueil.PNG" alt="Image page accueil Gest Culture">
+            </div>
+            <div class="swiper-slide">
+                <img src="modal-projet/Projet-GestCult/saisie.PNG" alt="Image page saisie Gest Culture">
+            </div>
+            <div class="swiper-slide">
+                <img src="modal-projet/Projet-GestCult/mcd.PNG" alt="Image MCD Gest Culture">
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="modal-projet/Projet-GestCult/authentification.PNG" alt="Image page authentification Gest Culture">
+                </div>
+                <div class="swiper-slide">
+                    <img src="modal-projet/Projet-GestCult/accueil.PNG" alt="Image page accueil Gest Culture">
+                </div>
+                <div class="swiper-slide">
+                    <img src="modal-projet/Projet-GestCult/saisie.PNG" alt="Image page saisie Gest Culture">
+                </div>
+                <div class="swiper-slide">
+                    <img src="modal-projet/Projet-GestCult/mcd.PNG" alt="Image MCD Gest Culture">
+                </div>
+            </div>
+        </div>
     </fieldset>    
 
     <fieldset>
@@ -65,3 +100,24 @@
         <p>-Gestion et manipulation de données (SQL et SQLite)</p>
     </fieldset>
 </div>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      thumbs: {
+        swiper: swiper
+      }
+    });
+</script>
