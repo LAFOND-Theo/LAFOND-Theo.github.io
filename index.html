@@ -51,14 +51,14 @@
             <li data-target="veille">
               <a href="#">Veille</a>
             </li>
-            <li data-target="contact">
+            <!-- <li data-target="contact">
               <a href="#">Contact</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="navbar-droite">
           <div class="nav-get-started">
-            <a href="https://github.com/LAFOND-Theo?tab=repositories" class="github">Github</a>
+            <a href="https://github.com/LAFOND-Theo?tab=repositories" target="_blank" class="github">Github</a>
           </div>
           <div class="menu-lateral-mobile">
             <div class="menu-lateral-mobile-burger">
@@ -88,7 +88,7 @@
           <p>Je m'appelle Théo Lafond, j'ai 21 ans et je suis un jeune développeur passionné.</p>
           <p">Actuellement en deuxième année de BTS SIO option SLAM, j'ai acquis des compétences significative en développement logiciel, en conception de bases de données et en gestion de projets.</p>
           <p>Je suis passionné par les défis que la programmation peut offrir, et j'aime travailler sur des projets innovants qui me permettent de mettre en pratique mes compétences et d'apprendre constamment.</p>
-          <p>Sur ce portfolio, vous pourrez découvrir mes projets les plus récents ainsi que les langages de programmation que je maîtrise, tels que Java et bien d'autres encore. N'hésitez pas à explorer mon site et à me contacter si vous avez des questions ou des propositions de collaboration.</p>
+          <p>Sur ce portfolio, vous pourrez découvrir mes projets les plus récents ainsi que les langages de programmation que j'utilise, tels que Java et bien d'autres encore. N'hésitez pas à explorer mon site et à me contacter si vous avez des questions ou des propositions de collaboration.</p>
         </div>
         <div class="arrow"></div>
       </div>
@@ -110,7 +110,7 @@
     </fieldset>
     <fieldset>
       <legend>2021-2023</legend>
-      <p>BTS SIO option B: SLAM</p>
+      <p>BTS Services Informatiques aux Organisations option B : Solutions Logicielles et Applications Métier (SLAM)</p>
       Lycée Eugène Jamot - Aubusson
     </fieldset>
     <fieldset>
@@ -121,7 +121,7 @@
     </fieldset>
     <fieldset>
       <legend>2019-2021</legend>
-      <p>Bac pro Systèmes numériques : Audiovisuels, réseau et équipement domestiques (ARED)</p>
+      <p>Bac pro Systèmes Numériques : Audiovisuels, Réseau et Équipement Domestiques (ARED)</p>
       Lycée Albert Einstein - Montluçon
       <p>Mention: Bien </p>
     </fieldset>
@@ -212,7 +212,22 @@
               </div>
             </div>
             <div class="swiper-image-container">
-              <img src="modal-projet/Projet-keyboard/Capture.PNG" alt="Image du clavier réalisé">
+              <div class="swiper mySwiperImg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-keyboard/Capture.PNG" alt="Image clavier alphanumérique">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-keyboard/num.PNG" alt="Image clavier numérique">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-keyboard/pinyin.PNG" alt="Image clavier pinyin">
+                    </div>
+                    <div class="swiper-slide img">
+                        <img src="modal-projet/Projet-keyboard/schema.svg" alt="Image schema pinyin">
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -220,49 +235,77 @@
   </section>
 
   <section class="competences" id="competences">
-    <ul>
-      <li>Travail en équipe</li>
-      <li>Gestion de projet</li>
-      <li>Résolution de problèmes</li>
-      <li>Créativité</li>
-    </ul>
-    <h3>Langages de programmation</h3>
-    <div class="langages">
-      <div class="langage">
-        <img src="images/CSharp.png" alt="Logo C#">
-        <span>C#</span>
-      </div>
-      <div class="langage">
-        <img src="images/java.png" alt="Logo Java">
-        <span>Java</span>
-      </div>
-      <div class="langage">
-        <img src="images/js.png" alt="Logo JavaScript">
-        <span>JavaScript</span>
-      </div>
-      <div class="langage">
-        <img src="images/php.png" alt="Logo PHP">
-        <span>PHP</span>
-      </div>
-      <div class="langage">
-        <img src="images/mysql.png" alt="Logo MySQL">
-        <span>MySQL</span>
-      </div>
-    </div>
-    
-    <h3>Certifications</h3>
+    <fieldset>
+      <legend>Compétences générales</legend>
+      
+      <ul>
+        <li>Travail en équipe</li>
+        <li>Gestion de projet</li>
+        <li>Résolution de problèmes</li>
+        <li>Créativité</li>
+        <li>Adaptabilité</li>
+        <li>Autonomie et prise d'initiative</li>
+        <li>Soucis du détail</li>
+        <li>Esprit d'analyse</li>
+        <li>Esprit de réflexion</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Langages</legend>
+      <img class="logo-modal" src="logo/java.png" alt="Logo Java">
+      <img class="logo-modal" src="logo/csharp.png" alt="Logo C#">
+      <img class="logo-modal" src="logo/javascript.png" alt="Logo JavaScript">
+      <img class="logo-modal" src="logo/html.png" alt="Logo HTML">
+      <img class="logo-modal" src="logo/css.png" alt="Logo CSS">
+      <img class="logo-modal" src="logo/xml.png" alt="Logo XML">
+      <img class="logo-modal" src="logo/json.png" alt="Logo Json">
+      <img class="logo-modal" src="logo/sql.png" alt="Logo SQL">
+      <img class="logo-modal" src="logo/php.png" alt="Logo PHP">
+    </fieldset>
+
+    <fieldset>
+      <legend>Certifications</legend>
+      <img class="logo-modal" src="logo/anssi.png" alt="Logo ANSSI">
+      <img class="logo-modal" src="logo/pix.png" alt="Logo PIX">
+    </fieldset>
   </section>
 
   <section class="veille" id="veille">
     <fieldset>
       <legend>Veille informatique</legend>
+      <p>Je consacre régulièrement du temps à effectuer une veille technologique afin de rester à la pointe des dernières avancées dans mon domaine d'expertise. 
+        Chaque semaine, je m'engage à allouer environ 2 à 3 heures pour me tenir informé des développements technologiques importants.</p>
+      <p>Pour ma veille technologique, j'utilise une variété de sources en ligne, notamment des sites web tels que ZDNet, TechCrunch, InfoWorld, NextImpact et The Verge. 
+        Ces plateformes me permettent d'accéder à des actualités, des analyses approfondies, des critiques de produits, des tutoriels et des tendances émergentes dans le domaine de la technologie.</p>
+      <p>Au cours de mes séances de veille, je parcours attentivement les actualités technologiques, j'examine les nouvelles innovations, les nouveaux produits et services, ainsi que les développements 
+        dans mon domaine spécifique. Je suis également attentif aux nouvelles tendances et aux évolutions qui pourraient avoir un impact sur mon travail et mes projets.</p>
+      <p>Je valorise également les échanges avec mes collègues, qui me permettent de partager des connaissances et de bénéficier d'une perspective complémentaire.</p>
+      <p>Mon objectif est de maintenir mes compétences à jour, d'identifier de nouvelles opportunités et de proposer des solutions technologiques adaptées à mes projets.</p>
+      <ul>
+        <li><a href="https://techcrunch.com/" target="_blank" class="github">TechCrunch</a></li>
+        <li><a href="https://www.javaworld.com/" target="_blank" class="github">InfoWorld</a></li>
+        <li><a href="https://www.nextinpact.com/" target="_blank" class="github">NextImpact</a></li>
+      </ul>
     </fieldset>
     <fieldset>
       <legend>Veille juridique</legend>
+      <p>Je consacre régulièrement du temps à effectuer une veille juridique afin de rester informé des dernières évolutions légales pertinentes dans mon domaine d'activité. 
+        Chaque semaine, je m'engage à consacrer environ 1 à 2 heures pour me renseigner et me tenir au courant des développements juridiques importants.</p>
+      <p>Pour cela, j'utilise diverses ressources en ligne telles que Legifrance, Legaltech News, CNIL, EDPB, ainsi que d'autres sources spécialisées dans les domaines 
+        juridiques qui me concernent. Ces sites web me permettent d'accéder aux textes officiels, aux lois, aux décrets, aux jurisprudences et aux analyses d'experts.</p>
+      <p>Au cours de mes séances de veille, je lis attentivement les actualités juridiques, j'examine les nouvelles législations et les commentaires d'experts. 
+        J'étudie également les décisions judiciaires importantes qui pourraient avoir un impact sur mon travail, mes projets ou mes futurs clients.</p>
+      <p>L'objectif de ma veille juridique est de rester constamment à jour sur les changements législatifs et réglementaires. 
+        Cela me permet de fournir des conseils juridiques pertinents, d'anticiper les changements qui pourraient affecter mon activité professionnelle et de prendre des décisions éclairées.</p>
+        <ul>
+          <li><a href="https://www.law.com/legaltechnews/" target="_blank" class="github">Legaltech News</a></li>
+          <li><a href="https://www.cnil.fr/" target="_blank" class="github">CNIL</a></li>
+          <li><a href=https://edpb.europa.eu/ target="_blank" class="github">EDPB</a></li>
+        </ul>
     </fieldset>
   </section>
 
-  <section class="contact" id="contact">
+  <!-- <section class="contact" id="contact">
     <p><b>Si vous le souhaitez, vous pouvez me laisser un message:</b></p>
     <div class="container-form">
       <form action="https://formsubmit.co/email" method="POST">
@@ -293,7 +336,7 @@
         <button class="button fa fa-paper-plane" type="submit"> <span>ENVOYER</span> </button>
       </form>
     </div>
-  </section>
+  </section> -->
   
   <div class="modal">
     <div class="modal-content">
@@ -303,100 +346,143 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiperProjet = new Swiper(".mySwiperProjets", {
-      loop: true,
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 1.75,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-        slideShadows: true,
-      },
-    });
+  <div class="dark-overlay"></div>
+</body>
 
-    var swiperImg = new Swiper(".mySwiperImg", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+<footer>
+  <div class="pied">
+    <div id="gauche" data-modal-content-url="modal-projet/mentions.html">
+      <a href="#" id="mentions-legales-link">Mentions légales</a>
+    </div>
+    <div id="centre">
+      <span>&copy; 2023 Lafond Théo. Tous droits réservés.</span>
+    </div>
+    <div id="droite">
+      <a href="mailto:theo03100@live.fr" target="_blank" class="btn">theo03100@live.fr</a>
+    </div>
+  </div>
+</footer>
 
-    // Ouvrir le modal
-    $('.open-icon').on('click', function() {
-      var slide = $(this).closest('.swiper-slide');
+<script>
+  var swiperProjet = new Swiper(".mySwiperProjets", {
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1.75,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+  });
+
+  var swiperImg = new Swiper(".mySwiperImg", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // Ouvrir le modal
+  $('#mentions-legales-link, .open-icon').on('click', function() {
+    var slide = $(this).closest('.swiper-slide');
+
+    if ($(this).is('.open-icon')) {
       var contentUrl = slide.data('modal-content-url');
-      
-      // Masquer le contenu actuel du modal
-      $('.modal-content').addClass('hidden-content');
 
       // Génère un timestamp unique, rendant l'URL différente à chaque chargement de façon à empêcher le navigateur de mettre en cache le contenu
       contentUrl = contentUrl + '?t=' + new Date().getTime();
-
-      // Charger le contenu du fichier externe
-      $.ajax({
-        url: contentUrl,
-        dataType: 'html',
-        success: function(data) {
-          $('.modal-content').html(data);
-
-          // Charger le fichier CSS externe
-          var cssUrl = "style.css";
-          $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
-
-          // Afficher le nouveau contenu
-          $('.modal-content').removeClass('hidden-content');
-
-          // Fermer le modal
-          $('.modal').on('click', '.close-icon', function() {
-            var slide = $('.swiper-slide.fullscreen');
-            slide.removeClass('fullscreen');
-            $('.modal').removeClass('open');
-            $('body').removeClass('modal-open');
-            $('.dark-overlay').removeClass('open');
-          });
-        },
-        error: function() {
-          $('.modal-content').html('<p>Erreur lors du chargement du contenu.</p>');
-        }
-      });
-
-      slide.addClass('fullscreen');
-      $('.modal').addClass('open');
-      $('body').addClass('modal-open');
-      $('.dark-overlay').addClass('open');
-    });
-    
-    //Evénement lors d'un scroll
-    $(window).on('scroll', function() {
-    var scrollPos = $(window).scrollTop();
-    //parcoursOffset représente la position verticale (top) de l'élément ayant la classe 'parcours' par rapport au document
-    var parcoursOffset = $('.parcours').offset().top;
-    var windowHeight = $(window).height();
-    //Vérifie si la position de défilement actuelle plus la hauteur de la fenêtre dépasse la position (offset) de la section 'parcours'
-    if (scrollPos + windowHeight > parcoursOffset) {
-      //Faire apparaitre les fieldset
-      $('.parcours').addClass('show');
+    }  else if ($(this).is('#mentions-legales-link')) {
+      contentUrl = 'modal-projet/mentions.html';
     }
-  });
+    
+    // Masquer le contenu actuel du modal
+    $('.modal-content').addClass('hidden-content');
 
-  </script>
-  <div class="dark-overlay"></div>
-</body>
+    // Charger le contenu du fichier externe
+    $.ajax({
+      url: contentUrl,
+      dataType: 'html',
+      success: function(data) {
+        $('.modal-content').html(data);
+
+        // Charger le fichier CSS externe
+        var cssUrl = "style.css";
+        $('head').append('<link rel="stylesheet" href="' + cssUrl + '">');
+
+        // Afficher le nouveau contenu
+        $('.modal-content').removeClass('hidden-content');
+
+        // Exécuter le script une fois le contenu chargé
+        $(document).ajaxComplete(function() {
+          var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true
+          });
+          var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev"
+            },
+            thumbs: {
+              swiper: swiper
+            }
+          });
+        });
+
+        // Fermer le modal
+        $('.modal').on('click', '.close-icon', function() {
+          var slide = $('.swiper-slide.fullscreen');
+          slide.removeClass('fullscreen');
+          $('.modal').removeClass('open');
+          $('body').removeClass('modal-open');
+          $('.dark-overlay').removeClass('open');
+          swiper.destroy();
+          swiper2.destroy();
+        });
+      },
+      error: function() {
+        $('.modal-content').html('<p>Erreur lors du chargement du contenu.</p>');
+      }
+    });
+
+    slide.addClass('fullscreen');
+    $('.modal').addClass('open');
+    $('body').addClass('modal-open');
+    $('.dark-overlay').addClass('open');
+  });
+  
+  //Evénement lors d'un scroll
+  $(window).on('scroll', function() {
+  var scrollPos = $(window).scrollTop();
+  //parcoursOffset représente la position verticale (top) de l'élément ayant la classe 'parcours' par rapport au document
+  var parcoursOffset = $('.parcours').offset().top;
+  var windowHeight = $(window).height();
+  //Vérifie si la position de défilement actuelle plus la hauteur de la fenêtre dépasse la position (offset) de la section 'parcours'
+  if (scrollPos + windowHeight > parcoursOffset) {
+    //Faire apparaitre les fieldset
+    $('.parcours').addClass('show');
+  }
+});
+
+</script>
 
 </html>
