@@ -15,16 +15,38 @@
 
     <fieldset>
         <legend>Langages et frameworks utilisés</legend>
+        <img class="logo-modal" src="logo/java.png" alt="Logo Java">
+        <img class="logo-modal" src="logo/sql.png" alt="Logo SQL">
+        <img class="logo-modal" src="logo/json.png" alt="Logo Json">
+        <img class="logo-modal" src="logo/php.png" alt="Logo PHP">
     </fieldset>
 
     <fieldset>
         <legend>Cahier des charges</legend>
+        <p>-Saisie des informations sur les cultures réalisées dans chaque parcelle : surface, espèce cultivée, rendements prévus et réalisés.</p>
+        <p>-Stockage des données localement dans une base de données SQLite.</p>
+        <p>-Envoi quotidien des données vers un serveur centralisé via une requête POST.</p>
+        <p>-Utilisation d'un script PHP pour l'enregistrement des données côté serveur.</p>
     </fieldset>
 
     <fieldset>
         <legend>Réalisation</legend>
-        <p></p>
+        <p>L'application mobile utilise une base de données locale SQLite pour stocker les données collectées. SQLite est une base de données légère et facile à intégrer dans une application mobile Android. 
+            Elle permet de stocker les informations sur les cultures, telles que la surface en hectares et l'espèce cultivée.</p>
         <br>
+        <p>
+            Lors de la saisie des informations sur les cultures dans l'application mobile, des expressions régulières (regex) sont utilisées pour valider et contrôler les données entrées par l'utilisateur. 
+            Lorsque les regex sont validées, l'application utilise des requêtes préparées pour interagir avec la base de données SQLite. Les requêtes préparées permettent de sécuriser l'accès 
+            à la base de données en évitant les attaques par injection SQL. Elles garantissent également l'intégrité des données en s'assurant que seules les données valides sont enregistrées dans la base de données.</p>
+        <br>
+        <p>Une fois les données saisies, l'application les enregistre dans un fichier JSON. Le format JSON est utilisé pour structurer les données de manière lisible et facilement échangeable avec d'autres systèmes. 
+            Les données JSON contenant les informations sur les cultures sont ensuite envoyées vers un serveur centralisé via des requêtes HTTP.</p>
+        <br>
+        <p>Pour l'envoi des données JSON vers le serveur, l'application utilise des appels de services Web REST. Les services Web REST permettent d'envoyer et de recevoir des données via le protocole HTTP. L'application envoie les données JSON 
+            au serveur en utilisant la méthode POST pour garantir la confidentialité des données.</p>
+        <br>
+        <p>Une fois les données JSON reçues par le serveur, un script PHP est utilisé pour les traiter et les enregistrer dans une base de données décentralisée. Le script PHP vérifie la validité des données reçues et les insère dans la base de données appropriée. 
+            Dans ce script des requêtes préparées sont également utilisées. L'utilisation de PHP permet une manipulation facile des données et une intégration avec la base de données décentralisée.</p>
     </fieldset>
 
     <fieldset>
@@ -34,8 +56,12 @@
 
     <fieldset>
         <legend>Compétences acquises ou renforcées</legend>
+        <p>-Conception d'application mobile</p>
         <p>-Sécurité des données</p>
         <p>-Programmation orientée objet</p>
         <p>-Gestion de projet</p>
+        <p>-Architecture d'appel de services Web REST</p>
+        <p>-Modélisation de données</p>
+        <p>-Gestion et manipulation de données (SQL et SQLite)</p>
     </fieldset>
 </div>

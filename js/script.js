@@ -32,7 +32,7 @@ $(window).on("load", function () {
         /* Cette méthode réagit au défilement de la page par l'utilisateur, ajustant ainsi l'apparence de la barre de navigation en fonction de la position de défilement.
         Elle contrôle le comportement de la barre de navigation en fonction de l'action de défilement. */
         windowScroll() {
-            if ($(window).scrollTop() > 60 && window.innerWidth > 768) {
+            if ($(window).scrollTop() > 60 && window.innerWidth > 990) {
                 $(".navbar-sec").addClass("fixed-nav");
                 if ($(".navbar-container").hasClass("clicked")) {
                     navbar.openNav.call($(".menu-lateral"));
