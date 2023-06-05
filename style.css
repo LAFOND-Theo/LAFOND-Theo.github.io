@@ -1071,6 +1071,10 @@ footer{
   .parcours{
     height: auto;
   }
+  
+  .parcours fieldset {
+    width: 80%;
+  }
 
   .projets{
     height: auto;
@@ -1086,6 +1090,10 @@ footer{
 
   .veille{
     height: auto;
+  }
+
+  .veille ul li {
+    width: -webkit-fill-available;
   }
 
   .accueil-container{
